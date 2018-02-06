@@ -145,14 +145,7 @@ if ($conn->connect_error) {
                                                                                 </td><td> 
                                                                                 </td><td>" . $row[total_selling_price].
                                                                             "</td></tr>";
-                                                                            }
-                                                                      
-                                                                    
-                                                                    
                                                                     }
-                                            
-                                                                       
- 
                                                             ?>
                                                         </tbody>
                                                     </table>
@@ -230,14 +223,8 @@ if ($conn->connect_error) {
                                                                 } else {
                                                                     echo "Error: " . $sql . "<br>" . $conn->error;
                                                                 }
-                                                
-                                        
-                                                        
-        
-                                                        
-                                                }
- 
-                                    ?>
+					 }
+					?>
                                 </tbody>
                             </table>
                             <div>
@@ -298,8 +285,6 @@ if ($conn->connect_error) {
                                                                 echo "Error: " . $sql . "<br>" . $conn->error;
                                                         }
                                     }
-                                              
- 
                                     ?>
                                 </tbody>
                             </table>
@@ -332,8 +317,6 @@ if ($conn->connect_error) {
                                     }
                                     if($_POST["InsertDisk"])
                                                 {
-                                                     
-                                                            
                                                         $Disk_Type=$_POST['Disk_Type'];
                                                         $Disk_Upgrade_Price=$_POST['Disk_Upgrade_Price'];
                                                         $sql="INSERT INTO disk (Disk_Type,Disk_Upgrade_Price)
@@ -355,7 +338,6 @@ if ($conn->connect_error) {
                                                                 echo "Error: " . $sql . "<br>" . $conn->error;
                                                         }
                                                 }
- 
                                     ?>
                                 </tbody>
                             </table>
@@ -388,8 +370,6 @@ if ($conn->connect_error) {
                                     }
                                     if($_POST["InsertMemory"])
                                                 {
-                                                        
-                                                          
                                                         $Memory_Size=$_POST['Memory_Size'];
                                                         $Memory_Upgrade_Price=$_POST['Memory_Upgrade_Price'];
                                                         $sql="INSERT INTO memory (Memory_Size,Memory_Upgrade_Price)
@@ -410,7 +390,6 @@ if ($conn->connect_error) {
                                                                 echo "Error: " . $sql1 . "<br>" . $conn->error;
                                                         }
                                                 }
- 
                                     ?>
                                 </tbody>
                             </table>
@@ -454,7 +433,6 @@ if ($conn->connect_error) {
                                     }
                                     if($_POST["UpdateProduct_Name"])
                                                 {
-                                                    
                                                         $Product_ID=$_POST['Product_ID'];
                                                         $Product_Name=$_POST['Product_Name'];
                                                         
@@ -475,13 +453,10 @@ if ($conn->connect_error) {
                                                                             "</td><td>" . $row["Base_Price"]. 
                                                                             "</td><td>" . $row["Inventory"].
                                                                             "</td></tr>";
-                                                                    
-                                                                }
-                                                              
+                                                                }    
                                                      }
                                                 }else if($_POST["UpdateModel"])
                                                 {
-                                                    
                                                         $Product_ID=$_POST['Product_ID'];
                                                         $Model=$_POST['Model'];
                                                         
@@ -502,17 +477,12 @@ if ($conn->connect_error) {
                                                                             "</td><td>" . $row["Base_Price"]. 
                                                                             "</td><td>" . $row["Inventory"].
                                                                             "</td></tr>";
-                                                                    
                                                                 }
-                                                              
-                                                     }
-                                                              
+                                                     }        
                                                 }else if($_POST["UpdateBase_Price"])
                                                 {
-                                                    
                                                        $Product_ID=$_POST['Product_ID'];
                                                         $Base_Price=$_POST['Base_Price'];
-                                                        
                                                         $sql2 = "update product
                                                                 set
                                                                 Base_Price= '$Base_Price'
@@ -522,23 +492,20 @@ if ($conn->connect_error) {
                                                                      ob_end_clean();
                                                                      $sql = "select * from product";
                                                                      $result = $conn->query($sql);
-                                                                        while ($row = $result->fetch_assoc()) {
-                                                                            echo
-                                                                            "<tr><td>"  . $row["Product_ID"].
-                                                                            "</td><td>" . $row["Product_Name"].
-                                                                            "</td><td>" . $row["Model"].
-                                                                            "</td><td>" . $row["Base_Price"]. 
-                                                                            "</td><td>" . $row["Inventory"].
-                                                                            "</td></tr>";
-                                                                    
+									while ($row = $result->fetch_assoc()) {
+									    echo
+									    "<tr><td>"  . $row["Product_ID"].
+									    "</td><td>" . $row["Product_Name"].
+									    "</td><td>" . $row["Model"].
+									    "</td><td>" . $row["Base_Price"]. 
+									    "</td><td>" . $row["Inventory"].
+									    "</td></tr>";
                                                                 }
-                                                              
-                                                     }
-                                                              
+                                                     }  
                                                 }else if($_POST["UpdateInventory"])
                                                 {
                                                     
-                                                         $Product_ID=$_POST['Product_ID'];
+                                                        $Product_ID=$_POST['Product_ID'];
                                                         $Inventory=$_POST['Inventory'];
                                                         
                                                         $sql2 = "update product
@@ -550,7 +517,7 @@ if ($conn->connect_error) {
                                                                      ob_end_clean();
                                                                      $sql = "select * from product";
                                                                      $result = $conn->query($sql);
-                                                                        while ($row = $result->fetch_assoc()) {
+                                                                     while ($row = $result->fetch_assoc()) {
                                                                             echo
                                                                             "<tr><td>"  . $row["Product_ID"].
                                                                             "</td><td>" . $row["Product_Name"].
@@ -558,11 +525,8 @@ if ($conn->connect_error) {
                                                                             "</td><td>" . $row["Base_Price"]. 
                                                                             "</td><td>" . $row["Inventory"].
                                                                             "</td></tr>";
-                                                                    
                                                                 }
-                                                              
-                                                     }
-                                                              
+                                                     }         
                                                 }
  
                                     ?>
