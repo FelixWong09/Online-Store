@@ -9,13 +9,14 @@ This is a [online-store](http://zhonghuang.sytes.net/csc671/) built with Apache2
 # Entity Relationship Model:
 
 # Hompage
-* Admin Login
-Emain:csc671
+Admin Login
 
-password:671project
+* Emain:csc671
 
-* New user
-Click "Sign up" button on the homepage.
+* password:671project
+
+New user
+* Click "Sign up" button on the homepage.
 
 # Admin
 * Overview of all orders and their status, and search them by date.
