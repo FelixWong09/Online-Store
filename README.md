@@ -7,6 +7,10 @@ This is a [online-store](http://zhonghuang.sytes.net/csc671/) built with Apache2
 
 
 # Entity Relationship Model:
+![ER-Model](/ReadmeImage/ER.png)
+
+# Relational Model:
+![Relational Model](/ReadmeImage/Relational.png)
 
 # Hompage
 Admin Login
