@@ -1,12 +1,13 @@
 # Online-Store
 
-This is a [online-store](http://zhonghuang.sytes.net/csc671/) built with Apache2, HTML, CSS, Bootstrop, PHP and MySQl, still running on a Ubuntu server on AWS.
+This is a [online-store](http://zhonghuang.sytes.net/csc671/) built with Apache2, HTML, CSS, Bootstrop, PHP and MySQL, still running on a Ubuntu server on AWS.
 
 * Username: csc671
 * Password: 671project
 
 
 # Entity Relationship Model:
+![ER-Model](/ReadmeImage/ER.png)
 
 # Hompage
 Admin Login
